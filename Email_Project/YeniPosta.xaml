@@ -1,0 +1,31 @@
+﻿<Page x:Class="Email_Project.YeniPosta"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Email_Project"
+      mc:Ignorable="d" 
+      d:DesignHeight="500" d:DesignWidth="698"
+      Title="YeniPosta">
+
+    <Grid Background="#262626">
+        <TextBlock Background="#262626" Foreground="#b2b6bf" HorizontalAlignment="Left" Margin="28,14,0,0" Text="To" TextWrapping="Wrap" VerticalAlignment="Top" Height="18" Width="35"/>
+        <TextBox x:Name="gonderilecekPostaAdresi" Foreground="#b2b6bf" Background="#262626" BorderBrush="#69afe5" HorizontalAlignment="Left" BorderThickness="0.7" Margin="63,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="607" Height="18"/>
+
+        <TextBlock Background="#262626" Foreground="#b2b6bf" HorizontalAlignment="Left" Margin="28,37,0,0" Text="Konu" TextWrapping="Wrap" VerticalAlignment="Top" Height="18" Width="34"/>
+        <TextBox x:Name="Konu" Foreground="#b2b6bf" Background="#262626" HorizontalAlignment="Left" BorderBrush="#69afe5" BorderThickness="0.7" Margin="63,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="607" Height="18"/>
+        <Button x:Name="Gözat_Button" Background="Transparent" HorizontalAlignment="Left" BorderThickness="0" Margin="572,457,0,0" VerticalAlignment="Top" Width="23" Height="21" Click="Gozat_Button_Click">
+            <Image Source="/attachment.png"/>
+        </Button>
+        <TextBox x:Name="Mesaj" Foreground="#b2b6bf" Background="#262626" BorderBrush="#69afe5" BorderThickness="0.7" HorizontalAlignment="Center" Margin="0,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="642" Height="392" AcceptsTab="True" AcceptsReturn="True"/>
+        <Button x:Name="Gonder_Button" Foreground="#b2b6bf" Background="#174b78" FontStyle="Italic" Content="Gönder" HorizontalAlignment="Left" BorderThickness="0" Margin="600,457,0,0" VerticalAlignment="Top" Width="70" Click="Gonder_Button_Click" Height="21"/>
+        <CheckBox x:Name="Sifrele_CheckBox" Content="Mesajı Şifrele" Foreground="#b2b6bf" BorderBrush="#69afe5" HorizontalAlignment="Left" Margin="28,457,0,0" VerticalAlignment="Top" Height="18"/>
+        <CheckBox x:Name="Imzala_CheckBox" Content="Mesajı İmzala" Foreground="#b2b6bf" BorderBrush="#69afe5" HorizontalAlignment="Left" Margin="123,457,0,0" VerticalAlignment="Top" Height="18"/>
+
+
+
+
+
+
+    </Grid>
+</Page>

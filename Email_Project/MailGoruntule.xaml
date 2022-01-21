@@ -1,0 +1,22 @@
+﻿<Page x:Class="Email_Project.MailGoruntule"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Email_Project"
+      mc:Ignorable="d" 
+      d:DesignHeight="500" d:DesignWidth="698"
+      Title="MailGoruntule">
+
+    <Grid x:Name="MailGoruntule_Grid" Background="#262626">
+        <TextBlock x:Name="MailGoruntule_Konu" FontSize="15" Foreground="#b2b6bf" HorizontalAlignment="Center" Margin="0,25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="636"/>
+        <TextBlock x:Name="MailGoruntule_From" FontSize="11" Foreground="#b2b6bf" HorizontalAlignment="Center" Margin="0,52,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="636"/>
+
+        <TextBlock HorizontalAlignment="Left" FontSize="9" Foreground="#b2b6bf" Margin="31,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="15" Height="16" Text="To:"/>
+        <TextBlock x:Name="MailGoruntule_To" FontSize="9" Foreground="#b2b6bf"  HorizontalAlignment="Left" Margin="46,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="621"/>
+
+        <TextBox x:Name="MailGoruntule_Metin" IsReadOnly="True" Background="Transparent" BorderThickness="0" FontSize="12" Foreground="#b2b6bf" HorizontalAlignment="Center" Margin="0,101,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="348" Width="636" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden"/>
+        <TextBlock x:Name="DijitalImza_Bilgi" Visibility="Collapsed" FontSize="10" Foreground="#b2b6bf" HorizontalAlignment="Left" Margin="31,477,0,0" Text="Bu E-Posta'nın kaynağı doğrulanmıştır." TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock x:Name="Sifre_Bilgi" Visibility="Collapsed" FontSize="10" Foreground="#b2b6bf" HorizontalAlignment="Left" Margin="559,477,0,0" Text="Bu E-Posta şifrelenmiştir." TextWrapping="Wrap" VerticalAlignment="Top"/>
+    </Grid>
+</Page>
